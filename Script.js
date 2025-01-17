@@ -18,13 +18,14 @@ window.speechSynthesis.addEventListener("voiceschanged", () => {
 // Criado a Função de Verificação do Texto!
 Button.addEventListener("click", () => {
   if (TextArea.value !== "") {
+    let voicesList = window.speechSynthesis.getVoices();
     let speak = new SpeechSynthesisUtterance(TextArea.value);
+    speak.voice = voicesList[selactdVoices];
     window.speechSynthesis.speak(speak);
   }
 });
 
 // Selecionando as vozes
-
 Voices.addEventListener("change", () => {
   selactdVoices = parseInt(Voices.value);
 });
