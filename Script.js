@@ -1,16 +1,16 @@
 // Pegando as Tags do HTML
-
 let TextArea = document.querySelector("#textarea");
-let Voices = document.querySelector("voices");
-let Button = document.querySelector("button");
+let Voices = document.querySelector("#voices");
+let Button = document.querySelector("#button");
 
 // Criando a lista de Vozes!
 window.speechSynthesis.addEventListener("voiceschanged", () => {
   let voicesList = window.speechSynthesis.getVoices();
-  for (let V in voicesList) {
+  for (let v in voicesList) {
     let optionEL = document.createElement("option");
-    optionEL.setAttribute("value", V);
-    optionEL.innerHTML = voicesList[V];
+    optionEL.setAttribute("value", v);
+    optionEL.innerHTML = voicesList[v].name;
+    Voices.appendChild(optionEL);
   }
 });
 
