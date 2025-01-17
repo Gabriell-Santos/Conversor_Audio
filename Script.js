@@ -2,6 +2,7 @@
 let TextArea = document.querySelector("#textarea");
 let Voices = document.querySelector("#voices");
 let Button = document.querySelector("#button");
+let selactdVoices = 0;
 
 // Criando a lista de Vozes!
 window.speechSynthesis.addEventListener("voiceschanged", () => {
@@ -20,4 +21,10 @@ Button.addEventListener("click", () => {
     let speak = new SpeechSynthesisUtterance(TextArea.value);
     window.speechSynthesis.speak(speak);
   }
+});
+
+// Selecionando as vozes
+
+Voices.addEventListener("change", () => {
+  selactdVoices = parseInt(Voices.value);
 });
