@@ -36,5 +36,8 @@ function UpadeteStatus() {
   if (window.speechSynthesis.speaking) {
     Voices.setAttribute("disabled", "disabled");
     Button.setAttribute("disabled", "disabled");
+  } else {
+    Voices.removeAttribute("disabled");
+    Button.removeAttribute("disabled");
   }
 }
