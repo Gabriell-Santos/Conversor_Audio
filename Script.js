@@ -29,3 +29,11 @@ Button.addEventListener("click", () => {
 Voices.addEventListener("change", () => {
   selactdVoices = parseInt(Voices.value);
 });
+
+// Função do desabled
+
+function UpadeteStatus() {
+  if (window.speechSynthesis.speaking) {
+    Voices.setAttribute("disabled", "disabled");
+  }
+}
