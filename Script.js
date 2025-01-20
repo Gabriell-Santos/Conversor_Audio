@@ -35,5 +35,6 @@ Voices.addEventListener("change", () => {
 function UpadeteStatus() {
   if (window.speechSynthesis.speaking) {
     Voices.setAttribute("disabled", "disabled");
+    Button.setAttribute("disabled", "disabled");
   }
 }
