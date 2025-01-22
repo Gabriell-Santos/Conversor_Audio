@@ -63,6 +63,11 @@ button:disabled{
 }
 
 @media (max-width: 500px){
+    
+    header > h1{
+        font-size: 1.3rem;
+    }
+    
     #textarea{
         width: 260px;
     }
