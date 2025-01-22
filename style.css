@@ -15,7 +15,8 @@ body{
 
 header{
     text-align: center;
-    background-color: cadetblue;
+    background-color: rgba(7, 38, 7, 0.393);
+    color: #eee0e0;
     padding: 15px;
     margin-bottom: 30px;
     font-weight: bolder;
@@ -27,12 +28,12 @@ main{
 }
 
 textarea{
-    border: 1px solid #999;
+    border: 1px solid #f9f6f6;
     background-color: transparent;
     border-radius: 10px;
     padding: 10px;
     font-size: 17px;
-    color: #999;
+    color: #cec6c6;
     width: 500px;
     height: 300px;
     outline: 0;
