@@ -71,4 +71,8 @@ button:disabled{
     #textarea{
         width: 260px;
     }
+
+    select, button{
+        font-size: 22px;
+    }
 }
