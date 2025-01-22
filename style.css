@@ -73,6 +73,7 @@ button:disabled{
     }
 
     select, button{
+        max-width: 250px;
         font-size: 22px;
     }
 }
