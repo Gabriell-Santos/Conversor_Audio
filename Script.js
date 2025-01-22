@@ -31,7 +31,6 @@ Voices.addEventListener("change", () => {
 });
 
 // Função do desabled
-
 function UpadeteStatus() {
   if (window.speechSynthesis.speaking) {
     Voices.setAttribute("disabled", "disabled");
@@ -41,3 +40,6 @@ function UpadeteStatus() {
     Button.removeAttribute("disabled");
   }
 }
+
+// Função de Verificação
+setInterval(UpadeteStatus, 1000);
