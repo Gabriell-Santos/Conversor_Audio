@@ -15,8 +15,19 @@ O **Conversor de Texto em Áudio** é uma ferramenta prática que transforma tex
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**
-  
 
+  ## 🖥️ Como Usar  
+
+### 1️⃣ Clone o Repositório  
+```bash
+git clone https://github.com/Gabriell-Santos/Conversor_Audio.git
+```
+
+### 2️⃣ Acesse a Pasta do Projeto
+```bash
+cd Conversor_Audio
+```
+----
 ✍️ Feito com amor por [Gabriell-Santos](https://github.com/Gabriell-Santos) ❤️ 🌐 🖋️
 
    
